@@ -1,0 +1,214 @@
+* {
+   margin: 0;
+   padding: 0;  
+}
+
+body {
+    width: 100vw;
+    background-image: url(/images/chess_background.avif);
+    background-repeat:no-repeat ;
+    background-color: rgb(51, 50, 50);
+}
+
+.h1 {
+    text-align: center;
+    color: rgb(165, 56, 165);
+    background-clip: text;
+}
+
+.chess_viedo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+}
+
+.main_page {
+    display: grid;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    font-family: calibri;
+    font-weight: 600;
+    box-shadow: rgb(246, 185, 250) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+     border-radius: 7px;
+     background: transparent;
+     transition: 1s;
+}
+
+.main_page:hover {
+    margin-left: 32rem;
+    margin-top: 10rem;
+    border: none;
+    height: 20rem;
+    width: 30%;
+    font-family: calibri;
+    font-weight: 600;
+    box-shadow: rgb(255, 147, 250) 0px 7px 29px 0px;
+     border-radius: 7px;
+     background-image: url(/images/chess-1.jpg);
+     border: 0px solid white;
+     background: transparent;
+     transition: 1s;
+}
+
+.form {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     color: rgb(176, 174, 174);
+}
+
+.form input {
+     border: none;
+     border-bottom: 1px solid grey;
+     outline: none;
+     padding: 3px;
+     border-radius: 4px;
+     color: white;
+     background: transparent;
+     overflow: hidden;
+}
+
+.form label {
+    color: rgb(202, 100, 218);
+}
+
+.form input:hover{
+    border: none;
+    border-bottom: 1px solid grey;
+    background-image:url();
+    transition: 3s;
+}
+
+.form select {
+    border: 1px solid plum;
+    border-bottom: 3px solid rgb(255, 187, 239);
+}
+
+
+.form input {
+    color: #d6d6d6;
+}
+
+.link {
+    transition: 1s;
+    text-decoration: none;
+    color: rgb(173, 154, 154);
+    background-image: linear-gradient(12deg plum,blue);
+
+}
+
+.link:hover {
+    border: none;
+    padding: 4px;
+    background-color: rgb(255, 17, 17);
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+
+
+.loaders {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition:opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden {
+    opacity: 0; 
+    visibility: hidden;
+}
+
+.loader::after {
+      content:  "";
+      width:  15px;
+      height: 15px;
+      border-bottom: 13px solid #ffffff;
+      border-top: 13px solid #ffff;
+      border-top-color: #0d5aff;
+      border-bottom-color: #f549a8;
+      border-radius:50%;
+      animation: loading 0.5s ease-in infinite;
+}
+@keyframes loading {
+    from {
+        transform:rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+} 
+
+@media(min-width : 400px) {
+    body {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .main_page{
+        margin-left: 2rem;
+        margin-top: 10rem;
+        border: none;
+        height: 100vh;
+        width: 30%;
+        font-family: calibri;
+        font-weight: 600;
+         border-radius: 7px;
+         background-image: url(/images/chess-1.jpg);
+         border: 0px solid white;
+         background: transparent;
+         transition: 1s;
+         height: 20rem;
+         width: 25rem;
+    }
+
+    .main_page:hover {
+        margin-left: 2rem;
+        margin-top: 10rem;
+        border: none;
+        height: 20rem;
+        width: 25rem;
+        font-family: calibri;
+        font-weight: 600;
+        box-shadow: rgb(255, 147, 250) 0px 7px 29px 0px;
+         border-radius: 7px;
+         background-image: url(/images/chess-1.jpg);
+         border: 0px solid white;
+         background: transparent;
+         transition: 1s;
+         
+    }
+    .chess_viedo {
+        /* position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh; */
+        display: none;
+    }
+    .chess_viedos {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        object-fit: fill;
+    }
+}
+
+

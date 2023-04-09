@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+.total_container {
+      display: grid;
+      width: 47%;
+      border-radius: 30px;
+      height: 40rem;
+      filter: blur(3px);
+      transition: 3s;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+       background-image: url(/Chess_Game/chess-3.jpg_large);
+        margin-left: 1rem;
+        margin-top: 10rem;
+      /* background-image: linear-gradient(12deg,red,black); */
+    }
+.total_container:hover {
+    filter: blur(0px);
+    transition: 1s;
+    height: 45rem;
+    width: 56%;
+    cursor: pointer;
+    background-image:linear-gradient(10deg black,white);
+    overflow: hidden;
+}
+.container{
+    width: 5rem;
+    height: 5rem; 
+    transition: 1s;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+.container:hover{
+    /* border: 2px solid black; */
+    width: 45rem;
+    height: 35rem; 
+    margin-left: -0.5rem;
+    margin-top: 1.2rem;  
+    background-color: white;
+    display: grid;
+    grid-template-columns:repeat(8,1fr) ;
+    grid-template-columns: repeat(8,minmax(80px,1fr));
+    grid-template-rows: repeat(8,1fr);
+    border-radius: 4px;
+    /* transform: rotate(360deg); */
+    transition: 3s;
+    cursor: pointer;
+}
+
+.odd {
+
+    color:rgb(11, 10, 10);
+    background-color:rgb(255, 255, 255);
+    
+}
+
+.even {
+    color:rgb(1, 0, 0) ;
+    border: 1px solid rgb(21, 18, 18);
+    background-color: rgb(0, 0, 0);
+}
+
+.second_odd {
+    color: rgb(18, 12, 12);
+    background-color: rgb(73, 118, 5);
+}
+
+.second_even {
+    color: rgb(151, 148, 148);
+    background-color: white;
+}
+
+.second_odd {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.second_even {
+    background-color: white;
+}
+
+.third_odd {
+    background-color: rgb(255, 255, 255);
+}
+
+.third_even {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.four_odd {
+    background-color: rgb(0, 0, 0);
+}
+
+.four_even {
+    background-color: white;
+}
+
+
+.five_odd {
+    background-color: rgb(254, 251, 251);
+}
+
+.five_even {
+    background-color: rgb(0, 0, 0);
+}
+
+.six_odd {
+    background-color: rgb(0, 0, 0);
+}
+
+.six_even {
+    background-color: white;
+}
+
+
+.seven_odd {
+    box-shadow: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+.seven_even {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+.eight_odd {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.eight_even {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+/* Second container */
+.second_container {
+    width: 5rem;
+    margin-left: 15rem;
+    height: 5rem; 
+    transition: 1s;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    margin-top: -14rem;
+    margin-left: 15rem;
+}
+
+.second_container:hover{
+        /* border: 2px solid black; */
+        width: 45rem;
+        height: 35rem; 
+        margin-left: -0.5rem;
+        margin-top: -18rem;  
+        display: grid;
+        grid-template-columns:repeat(8,1fr) ;
+        grid-template-columns: repeat(8,minmax(80px,1fr));
+        grid-template-rows: repeat(8,1fr);
+        border-radius: 4px;
+        transform: rotate(360deg);
+        transition: 3s;
+        cursor: pointer;
+        background-color: white;
+        object-fit: cover;
+    }
+    
+    .odd {
+    
+        color:rgb(0, 0, 0);
+        background-color:rgb(199, 239, 162);
+        
+    }
+    
+    .even {
+        color:rgb(189, 182, 182) ;
+        border: 1px solid rgb(21, 18, 18);
+        background-color: rgb(144, 176, 244);
+    }
+    
+    .second_odd {
+        color: rgb(18, 12, 12);
+        background-color: rgb(73, 118, 5);
+    }
+    
+    .second_even {
+        color: rgb(151, 148, 148);
+        background-color: white;
+    }
+    
+    .second_odd {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    
+    .second_even {
+        background-color: white;
+    }
+    
+    .third_odd {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .third_even {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    
+    .four_odd {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .four_even {
+        background-color: white;
+    }
+    
+    
+    .five_odd {
+        background-color: rgb(254, 251, 251);
+    }
+    
+    .five_even {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .six_odd {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .six_even {
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    .seven_odd {
+        box-shadow: 20px;
+        color: gold;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .seven_even {
+        color: gold;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    
+    .eight_odd {
+        color: gold;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .eight_even {
+        color: rgb(255, 217, 0);
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    /* third board */
+
+    .third_container  {
+        width: 5rem;
+        margin-left: 5rem;
+        margin-top: 4rem;
+        height: 5rem; 
+        transition: 1s;
+        /* border: 2px solid black; */
+        overflow: hidden;
+        margin-top: -1rem;
+    }
+    
+    .third_container:hover{
+            /* border: 2px solid black; */
+            width: 45rem;
+            height: 35rem; 
+            margin-left: -0.5rem;
+            margin-top: -16rem;  
+            display: grid;
+            grid-template-columns:repeat(8,1fr) ;
+            grid-template-columns: repeat(8,minmax(80px,1fr));
+            grid-template-rows: repeat(8,1fr);
+            border-radius: 4px;
+            transform: rotate(360deg);
+            transition: 3s;
+            cursor: pointer;
+            background-color: white;
+            border-right: 2px solid black;
+        }
+        
+        .odd {
+        
+            color:rgb(189, 182, 182);
+            background-color:rgb(255, 255, 255);
+            
+        }
+        
+        .even {
+            color:rgb(189, 182, 182) ;
+            border: 1px solid rgb(21, 18, 18);
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .second_odd {
+            color: rgb(18, 12, 12);
+            background-color: rgb(73, 118, 5);
+        }
+        
+        .second_even {
+            color: rgb(151, 148, 148);
+            background-color: white;
+        }
+        
+        .second_odd {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+        .second_even {
+            background-color: white;
+        }
+        
+        .third_odd {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .third_even {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        
+        .four_odd {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .four_even {
+            background-color: white;
+        }
+        
+        
+        .five_odd {
+            background-color: rgb(254, 251, 251);
+        }
+        
+        .five_even {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .six_odd {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .six_even {
+            background-color: white;
+        }
+        
+        
+        .seven_odd {
+            box-shadow: 20px;
+            color: gold;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .seven_even {
+            color: gold;
+            background-color: rgb(0, 0, 0);
+        }
+        
+        
+        .eight_odd {
+            color: gold;
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .eight_even {
+            color: rgb(255, 217, 0);
+            background-color: rgb(255, 255, 255);
+        }
+
+
+/* summary of chess */
+
+.summary_chess {
+      background-color: rgb(0, 0, 0);
+      margin-left: 47rem;
+      margin-top: -40.3rem;
+      height: 100%;
+      color: white;
+}
+
+.start_message {
+    margin-top: -2.5rem;
+    visibility: hidden;
+    border: 2px solid black;
+}
+
+/* .start_message :hover {
+    visibility: visible;
+} */
+
+.loaders {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition:opacity 0.75s, visibility 0.75s;
+}
+.loaders-hidden {
+    opacity: 0; 
+    visibility: hidden;
+}
+
+.loaders::after {
+      content:  "";
+      width:  15px;
+      height: 15px;
+      border-bottom: 13px solid #ffffff;
+      border-top: 13px solid #ffff;
+      border-top-color: #0d5aff;
+      border-bottom-color: #f549a8;
+      border-radius:50%;
+      animation: loading 0.5s ease-in infinite;
+}
+
+
+@keyframes loading {
+    from {
+        transform:rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+} 
+
+@media (min-width:400px) {
+    body > * {
+        display: grid;
+        place-items: center;
+        grid-template-columns:repeat(8,1fr) ;
+        grid-template-columns: repeat(8,minmax(80px,1fr));
+    }
+
+    .total_container {
+      display: grid;
+      width: 50rem;
+      border-radius: 30px;
+      height: 40rem;
+      filter: blur(3px);
+      transition: 3s;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+       background-image: url(/Chess_Game/chess-3.jpg_large);
+        margin-left: 15rem;
+        margin-top: 3rem;
+        border: none;
+        box-shadow: rgba(250, 250, 255, 0.1) 0px 4px 16px, rgb(255, 255, 255) 0px 8px 24px,
+         rgba(183, 183, 249, 0.929) 0px 16px 56px;
+         transition: 1s;
+    }
+
+    .total_container:hover {
+        filter: blur(0px);
+        transition: 1s;
+        height: 45rem;
+        width: 50rem;
+        cursor: pointer;
+        background-image:linear-gradient(10deg black,white);
+        overflow: hidden;
+        box-shadow: rgb(252, 250, 161) 0px 4px 16px, rgb(255, 255, 255) 0px 8px 24px,
+        rgb(255, 176, 251) 0px 16px 56px;
+        transition: 1s;
+    }
+    .summary_chess {
+        background-color: rgb(5, 4, 4);
+        margin-left: 25rem;
+        margin-top: -10rem;
+        height: 100vh;
+        width: 100%;
+        padding: 10px;
+  }
+    
+  .container{
+    width: 5rem;
+    height: 5rem; 
+    transition: 1s;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    margin-top: 20rem;
+    margin-left: 30rem;
+}
+.container:hover{
+    /* border: 2px solid black; */
+    width: 40rem;
+    height: 35rem; 
+    margin-left: 20rem;
+    margin-top: 3rem;  
+    background-color: white;
+    display: grid;
+    grid-template-columns:repeat(8,1fr) ;
+    grid-template-columns: repeat(8,minmax(80px,1fr));
+    grid-template-rows: repeat(8,1fr);
+    border-radius: 4px;
+    transform: rotate(360deg);
+    transition: 3s;
+    cursor: pointer;
+}
+ .select{
+    margin-top: -12rem;
+    text-align: center;
+    margin-left: 10rem;
+    position: fixed;
+    color:whitesmoke;
+ }
+
+
+
+ /* Second container */
+.second_container {
+    width: 5rem;
+    margin-left: 15rem;
+    height: 5rem; 
+    transition: 1s;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    margin-top: 14rem;
+    margin-left: -4rem;
+    background-color: red;
+}
+
+.second_container:hover{
+        /* border: 2px solid black; */
+        width: 45rem;
+        height: 35rem; 
+        margin-left: 6rem;
+        margin-top: 5rem;  
+        display: grid;
+        grid-template-columns:repeat(8,1fr) ;
+        grid-template-columns: repeat(8,minmax(80px,1fr));
+        grid-template-rows: repeat(8,1fr);
+        border-radius: 4px;
+        transform: rotate(360deg);
+        transition: 3s;
+        cursor: pointer;
+        background-color: white;
+        object-fit: cover;
+    }
+
+
+     /* third board */
+
+     .third_container  {
+        width: 5rem;
+        margin-left: 25rem;
+        margin-top: 29rem;
+        height: 5rem; 
+        transition: 1s;
+        /* border: 2px solid black; */
+        overflow: hidden;
+        background-color: #f549a8;
+    }
+    
+    .third_container:hover{
+            /* border: 2px solid black; */
+            width: 45rem;
+            height: 35rem; 
+            margin-left: -7rem;
+            margin-top: 5rem;  
+            display: grid;
+            grid-template-columns:repeat(8,1fr) ;
+            grid-template-columns: repeat(8,minmax(80px,1fr));
+            grid-template-rows: repeat(8,1fr);
+            border-radius: 4px;
+            transform: rotate(360deg);
+            transition: 3s;
+            cursor: pointer;
+            background-color: white;
+            border-right: 2px solid black;
+        }
+        
+        .intro {
+            margin-top: 10rem;
+            width: 20rem;
+            height: 100vh;
+        }
+
+        .chess_board {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            margin-left: 60rem; 
+        }
+       
+}
+

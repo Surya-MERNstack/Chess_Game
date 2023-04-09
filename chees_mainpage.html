@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="/Chess_Game/chess_mainpage.css">
+    <script src="/Chess_Game/chess_mainpage.js"></script>
+</head>
+<body>
+    <video  autoplay loop muted plays-inline class="chess_viedos">
+        <source src="/Chess_Game/chess_video.mp4" type="video/mp4">
+    </video>
+    <div class="main_page">
+        <video  autoplay loop muted plays-inline class="chess_viedo">
+            <source src="/Chess_Game/chess_video.mp4" type="video/mp4">
+        </video>
+       <div class="h1">
+        <h1>Chess Login</h1>
+       </div>
+        <div class="form">
+            <form action="">
+                <label for="">Name</label><br>
+                <input  id="input" type="text" required placeholder="Enter the Name"><br><br>
+                <label for="">Email</label><br>
+                <input    id="input" type="email" required placeholder="@gmail.com"><br><br>
+                <label for="">Gender</label><br>
+                <input   id="input" style="margin: 2px;" type="radio"  name="gender" id="">Male
+                <input   id="input" type="radio" style="margin: 7px;"  name="gender" id="">Female <br><br>
+                <label for="">Select State</label>
+                <select style="border: none;border-radius: 4px;background-color: rgb(63, 63, 63);color: white;padding: 3px;">
+                    <option value="Chengalpattu">Chengalpattu</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Cuddalore</option>
+                    <option value="Dharmapuri">Dharmapuri</option>
+                    <option value="Dindigul">Dindigul</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Kallakurichi">Kallakurichi</option>
+                    <option value="Kanchipuram">Kanchipuram</option>
+                    <option value="Kanniyakumari">Kanniyakumari</option>
+                    <option value="Karur">Karur</option>
+                    <option value="Krishnagiri">Krishnagiri</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Mayiladuthurai">Mayiladuthurai</option>
+                    <option value="Nagapattinam">Nagapattinam</option>
+                    <option value="Namakkal">Namakkal</option>
+                    <option value="Nilgiris">Nilgiris</option>
+                    <option value="Perambalur">Perambalur</option>
+                    <option value="Pudukkottai">Pudukkottai</option>
+                    <option value="Ramanathapuram">Ramanathapuram</option>
+                    <option value="Ranipet">Ranipet</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Sivagangai">Sivagangai</option>
+                    <option  value="Ariyalur"></option>
+                    <option value="Tenkasi">Tenkasi</option>
+                    <option value="Thanjavur">Thanjavur</option>
+                    <option value="Theni">Theni</option>
+                    <option value="Thoothukudi">Thoothukudi</option>
+                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                    <option value="Tirunelveli">Tirunelveli</option>
+                    <option value="Tirupathur">Tirupathur</option>
+                    <option value="Tiruppur">Tiruppur</option>
+                    <option value="Tiruvallur">Tiruvallur</option>
+                    <option value="Tiruvannamalai">Tiruvannamalai</option>
+                    <option value="Tiruvarur">Tiruvarur</option>
+                    <option value="Vellore">Vellore</option>
+                    <option value="Viluppuram">Viluppuram</option>
+                    <option value="Virudhunagar">Virudhunagar</option>
+                </select><br> <br>
+                <a onclick="validateForm()" class="link" href="/Chess_Game/chess_secondpage.html">Submit</a>
+            </form><br>
+        </div>
+        <div class="loader">
+        </div>
+    </div>
+   
+</body>
+</html>
