@@ -1,12 +1,4 @@
-// window.addEventListener('load', () => {
-//     const loader = document.querySelector('.loader')
 
-//     loader.classList.add ('loader-hidden');
-
-//     loader.addEventListener('transistion', () => {
-//         document.body.removeChild('loader')
-//     })
-// })
 
 window.addEventListener('load' , () => {
       const loader = document.querySelector('.loader');
@@ -18,15 +10,15 @@ window.addEventListener('load' , () => {
       })
 })
 
-//  function inputfiled () {
-//      let details = document.getElementById('input').value
+ function inputfiled () {
+     let details = document.getElementById('input').value
 
-//      if(details === "") {
-//          alert('Enter the details')
-//      }else{
-//         alert('details Saved')
-//      }
-//  }
+     if(details === "") {
+         alert('Enter the details')
+     }else{
+        alert('details Saved')
+     }
+ }
 
 // function validateForm() {
 //     // Get the form input values
