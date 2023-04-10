@@ -608,6 +608,15 @@ h1 {
             width: 100%;
             text-align: center;
             margin-left: 60rem; 
+            animation: color 3s infinite;
+            
+        }
+
+        @keyframes color {
+             0% {color:white}
+             50% {color:plum}
+             0% {color:purple}
+
         }
        
 }
